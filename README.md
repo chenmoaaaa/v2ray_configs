@@ -19,11 +19,11 @@ ss://Y2hhY2hhMjA6Q1RZREREREREQlVH@ss.wangcb.cc:8080#ss.wangcb.cc
 ### 备用配置:
 所有备用配置使用[v2ray软件](https://www.v2ray.com/)作为代理软件。使用此软件，通常通过配置文件连接。
 - 基于[mKCP](https://www.v2ray.com/chapter_04/mkcp.html)底层传输的备用配置
-    + 配置文件: [client_mkcp.json](./client_mkcp.json)
+    + 配置文件: [client_mkcp.json](./client_mkcp.json)
 - 基于WebSocket底层传输的备用配置，注意此配置使用了Cloudflare CDN代理，有着较好的穿透性，但也损失了较大性能。
-    + 配置文件: [client_ws.json](./client_ws.json)
+    + 配置文件: [client_ws.json](./client_ws.json)
 - 基于http底层传输的备用配置
-    + 配置文件: [client_http.json](./client_http.json)
+    + 配置文件: [client_http.json](./client_http.json)
 
 ### v2ray客户端下载:
 - Windows, Linux, OS X
