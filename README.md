@@ -1,3 +1,4 @@
+# wangcb.cc上的小壁虎们
 ## 主用配置(ss):
 ```
 ss://Y2hhY2hhMjA6Q1RZREREREREQlVH@ss.wangcb.cc:8080#ss.wangcb.cc
