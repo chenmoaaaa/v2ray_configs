@@ -5,7 +5,7 @@ ss://Y2hhY2hhMjA6Q1RZREREREREQlVH@ss.wangcb.cc:8080#ss.wangcb.cc
 ```
 使用方法：将上面这串URL导入到客户端内
 
-若主用配置无法使用，请去[备用配置](#%E5%A4%87%E7%94%A8%E9%85%8D%E7%BD%AE%28v2ray%29%3A)
+若主用配置无法使用，请去[备用配置](#%E5%A4%87%E7%94%A8%E9%85%8D%E7%BD%AE)
 ### ss客户端下载:
 - Windows
     + [https://github.com/shadowsocks/shadowsocks-windows/releases](https://github.com/shadowsocks/shadowsocks-windows/releases)
@@ -16,4 +16,4 @@ ss://Y2hhY2hhMjA6Q1RZREREREREQlVH@ss.wangcb.cc:8080#ss.wangcb.cc
 - iOS
     + [Wingy(App Store)](https://itunes.apple.com/us/app/wingy-http-s-socks5-proxy-utility/id1178584911)
 
-### 备用配置(v2ray):
+### 备用配置:
