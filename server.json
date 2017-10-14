@@ -1,3 +1,14 @@
+/*
+V1
+8080-ss
+2086-ws
+2082-http
+80-kcp
+V2
+81-tcp dynamic 13579-13679
+82-kcp dynamic 24680-24780
+21-tcp
+*/
 {
     "log": {
         "access": "/var/log/v2ray/access.log",
@@ -19,6 +30,79 @@
         "settings": {}
     },
     "inboundDetour": [
+        {
+            "port": 21,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "a191ae76-723d-ad95-ead3-0c58c285cbc8",
+                        "level": 1,
+                        "alterId": 64
+                    }
+                ]
+            }
+        },
+        {
+            "port": 81,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "a191ae76-723d-ad95-ead3-0c58c285cbc8",
+                        "level": 1,
+                        "alterId": 64
+                    }
+                ],
+                "detour": {
+                    "to": "detour-tcp"
+                }
+            }
+        },
+        {
+            "protocol": "vmess",
+            "port": "13579-13679",
+            "tag": "detour-tcp",
+            "settings": {},
+            "allocate": {
+                "strategy": "random",
+                "concurrency": 2,
+                "refresh": 5
+            }
+        },
+        {
+            "port": 82,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "a191ae76-723d-ad95-ead3-0c58c285cbc8",
+                        "level": 1,
+                        "alterId": 64
+                    }
+                ],
+                "detour": {
+                    "to": "detour-kcp"
+                }
+            },
+            "streamSettings": {
+                "network": "kcp"
+            }
+        },
+        {
+            "protocol": "vmess",
+            "port": "24680-24780",
+            "tag": "detour-kcp",
+            "settings": {},
+            "allocate": {
+                "strategy": "random",
+                "concurrency": 2,
+                "refresh": 5
+            },
+            "streamSettings": {
+                "network": "kcp"
+            }
+        },
         {
             "port": 2086,
             "protocol": "vmess",
