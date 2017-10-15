@@ -5,8 +5,8 @@ V1
 2082-http
 80-kcp
 V2
-81-tcp dynamic 13579-13679
-82-kcp dynamic 24680-24780
+81-tcp dynamic 321-421
+82-kcp dynamic 321-421
 21-tcp
 */
 {
@@ -61,7 +61,7 @@ V2
         },
         {
             "protocol": "vmess",
-            "port": "13579-13679",
+            "port": "321-421",
             "tag": "detour-tcp",
             "settings": {},
             "allocate": {
@@ -91,7 +91,7 @@ V2
         },
         {
             "protocol": "vmess",
-            "port": "24680-24780",
+            "port": "321-421",
             "tag": "detour-kcp",
             "settings": {},
             "allocate": {
